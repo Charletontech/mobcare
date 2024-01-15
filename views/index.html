@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dbfue99qr/image/upload/v1705145300/Mobcare/logo2_wcjkwv.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <title>Mobcare</title>
+</head>
+<body>
+    <header class="container-fluid fade-slide-section">
+        <div class="row">
+            <div class="col-xs-6" >
+                <img class="logo" src="https://res.cloudinary.com/dbfue99qr/image/upload/v1705145245/Mobcare/logo1_gs9ozs.png" alt="Mobcare logo">
+            </div>
+            <div class="col-xs-6">
+                <button class="btn col-sm-6 hidden-lg" onclick="toggleSidebar()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </button>
+
+                <button class="sub hidden-xs">Subscribe <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+        </div>
+    </header>
+
+    <div id="loader-overlay">
+        <img src="https://res.cloudinary.com/dbfue99qr/image/upload/v1705145300/Mobcare/logo2_wcjkwv.png" alt="Loader Image">
+    </div>
+
+
+    <div id="sidebar">
+        <h3 style="color: #00a24a; padding-left: 1rem; font-weight: bold;">MobCare</h3>
+        <a href="/signup" onclick="toggleSidebar()">Sign Up</a>
+        <a href="/subscription" onclick="toggleSidebar()">Subscribe</a>
+    </div>
+
+<div class="hero-area container-fluid fade-slide-section">
+    <div class="row">
+        <div class="hero-text col-xs-2 col-md-7">
+            <div class="hero-text-sub">
+                <h2>Get Unlimited Gadget Repairs </h2>
+                <h2 style="margin-top: -1rem;"> with <span style="color: #00a24a; font-family: 'Lemon', serif;">Mobcare!</span></h2>
+                <p>At Mobcare, we provide comprehensive and reliable phone insurance solutions to safeguard your valuable devices and keep you connected seamlessly.
+
+                </p>
+                <button><a href="/signup" style="text-decoration: none; color: white;">Join Us</a></button>
+            </div>
+        </div>
+        <div class="hero-image col-xs-10 col-md-5">
+            <!-- <img src="css/img/hero1.png" alt="" srcset=""> -->
+        </div>
+    </div>
+</div>
+
+<div class="about container-fluid fade-slide-section">
+    <div class="row">
+        <div class="about-sideA col-sm-12 col-md-6">
+            <h2>About <span>Us</span></h2>
+            <div class="stap"></div>
+            <img src="https://res.cloudinary.com/dbfue99qr/image/upload/v1705145029/Mobcare/about_xtwamd.jpg" alt="">
+        </div>
+        <div class="about-sideB col-sm-12 col-md-6">
+            <h4>Who We Are</h4>
+            <p>
+                Established with a passion for protecting the lifeline
+                 that keeps you connected to the world, 
+                 MobCare is a trusted name in the realm of phone insurance. With years of expertise and a commitment to customer satisfaction, we have emerged as a leader in providing innovative insurance
+                 plans tailored to meet the diverse needs of our clients.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="values container-fluid fade-slide-section">
+    <div class="row">
+        <div class="values-sideA col-sm-12 col-md-6">
+            <h4>Our Values</h4>
+            <div class="stap" style="background: white;"></div>
+            <img src="https://res.cloudinary.com/dbfue99qr/image/upload/v1705145366/Mobcare/values_sduszy.jpg" alt="">
+        </div>
+        <div class="values-sideB col-sm-12 col-md-6">
+            <p>
+                <h5>Integrity</h5>
+                <p>
+                    We operate with honesty, transparency, and integrity in
+                     all aspects of our business. Your trust is our most 
+                     valuable asset, and we strive to uphold the highest
+                      standards of ethical conduct.
+
+                </p>
+
+                <h5>Customer-Centric Approach</h5>
+                <p>
+                    Your satisfaction is at the heart of everything we 
+                    do. Our customer-centric approach ensures that you 
+                    receive personalized service and solutions that cater 
+                    to your specific requirements.
+
+                </p>
+
+                <h5>Innovation</h5>
+                <p>
+                    The tech landscape is ever-evolving, and so are we. Mobcare embraces innovation to stay ahead of the curve, offering cutting-edge insurance plans that adapt to the changing needs of our customers.
+
+                </p>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="values container-fluid fade-slide-section" id="apart">
+    <div class="row">
+        <div class="values-sideA col-sm-12 col-md-6">
+            <h4>Why Choose Us?</h4> 
+            <div class="stap" style="background-color: #00a24a"></div>
+            <img id="apartImg" src="https://res.cloudinary.com/dbfue99qr/image/upload/v1705145410/Mobcare/apart1_gmij2h.jpg" alt="">
+        </div>
+        <div class="values-sideB col-sm-12 col-md-6">
+            <p>
+                <h5>Simple Claims Process</h5>
+                <p>
+                    We understand that the last thing you want in a stressful situation is a complicated claims process. 
+                    Our straightforward and efficient claims process ensures a hassle-free experience when you need it the most.
+
+                </p>
+
+                <h5>Affordable Premiums</h5>
+                <p>
+                    Quality protection shouldn't break the bank. We offer competitive premiums 
+                    that make safeguarding your device accessible to everyone.
+                </p>
+
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid fade-slide-section">
+    <div class="row">
+        <div class="footer-sideA col-sm-12 col-md-3">
+            <img src="https://res.cloudinary.com/dbfue99qr/image/upload/v1705145300/Mobcare/logo2_wcjkwv.png" alt="">
+        </div>
+        <div class="footer-sideB col-sm-12 col-md-9">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h3>Join Us Today!</h3>
+                            <p>
+                                Whether you're a busy professional, a student, or someone who relies on their phone for every aspect of life, MobCare is here to provide the peace of mind you deserve. Join us on this journey of protection, innovation, and unparalleled service.
+                Thank you for choosing MobCare to protect what matters most to you.
+
+                            </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Contact Us</h4>
+                            <p>
+                                78 Simpson Street, Lagos.<br>
+                                adsbyshante@gmail.com<br>
+                                +2348186815990 
+                                <p style="color: #3cbbff; font-size: .8em;">Copyright &copy; Mobcare Nig. 2024</p>
+
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            
+        </div>
+    </div>
+</footer>
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <h2></h2>
+        </div>
+        <div class="col-sm-12 col-md-6">
+        </div>
+    </div>
+</div> -->
+
+<script src="js/app.js"></script>
+<script src="js/jquery-3.6.3.js">
+</script>
+</body>
+</html>

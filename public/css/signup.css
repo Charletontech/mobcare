@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.cont {
+    margin: auto;
+    display: block;
+}
+
+.sideA {
+    height: 20rem;
+}
+
+.sideA img {
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    margin: auto;
+}
+
+.sideB {
+    height: 20rem;
+}
+
+.sideB-wrapper{
+    width: 85%;
+    margin: auto;
+    display: block;
+    background: white;
+    height: 100%;
+}
+
+.sideB input {
+    outline: none;
+    width: 100%;
+    margin: .8rem 0rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-bottom: 1px solid rgb(100, 98, 98);
+    padding-left: 0px;
+    padding: 4px;
+    transition: 1s;
+}
+
+.sideB button{
+    margin: 1.5rem auto;
+    background: #00a24a;
+    display: block;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+}
+
+
+
+
+.flexBox input:nth-child(1) {
+    width: 45%;
+    float: left;
+}
+
+.flexBox input:nth-child(2) {
+    width: 45%;
+    float: right;
+}
+
+
+textarea {
+    width: 100%;
+    margin: .8rem 0rem;
+    border: none;
+    border-bottom: 1px solid rgb(100, 98, 98);
+    padding: 4px;
+    height: 5rem;
+} 
+
+
+#successOverlay {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -999; 
+    font-size: 1.7rem;
+}
+
+
+select{
+    border: none;
+}
+
+label{
+    color: rgb(100, 98, 98);
+}
+
+
+/* .flex2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+} */
+
+
+
+@media screen and (min-width: 720px){
+    .cont{
+        width: 75%;
+        display: block;
+        margin:5% auto;
+        height: 60rem;
+        border: 1px solid black;
+        padding: 3rem;
+        border-radius: 8px;
+    }
+    .sideA img {
+        padding-top: 6rem;
+        width: 45rem;
+        height: 45rem;
+    }
+
+}

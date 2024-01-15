@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <title>Mobcare - Sign up</title>
+</head>
+<body>
+    <div class="cont container-fluid">
+        <form action="/form-submission" method="post" enctype="application/x-www-form-urlencoded" class="formData">
+            <div class="row">
+                <div class="sideA col-sm-12 col-md-6">
+                    <img src="css/img/logo2.png" alt="">
+                </div>
+                <div class="sideB col-sm-12 col-md-6">
+                    <div class="sideB-wrapper">
+                        <div class="flexBox">
+                            <div class="flexBox">
+                                <input type="text" name="firstName" placeholder="First Name" required>
+                                <input type="text" name="middleName" placeholder="Middle Name" required>
+                            </div>
+                            <input type="text" style="width: 100%;" name="lastName" placeholder="Last Name" required>
+                        </div>
+                        <div class="flexBox">
+                            <input type="text" name="gender" placeholder="Gender" required>
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="flexBox">
+                            <input type="text" name="email" placeholder="Email" required>
+                            <input type="text" name="model" placeholder="Phone Model" required>
+                        </div>
+                        <input type="number" name="imei" placeholder="IMEI Number" required>
+                        <div class="flexBox">
+                            <input type="text" name="brand" placeholder="Phone Brand" required>
+                            <input type="text" name="color" placeholder="Phone Color" required>
+                        </div>
+                        <div class="flex2">
+                            <div class="dob" >
+                                <label for="">Date Of Birth</label><br>
+                                <input  type="date" name="dob" placeholder="Date of Birth"  required>
+                            </div>
+
+                            <div >
+                                <label for="">Subscription Plan: </label>
+                                <select name="plan" id="" required>
+                                    <option value="repair">Repair</option>
+                                    <option value="theft">Theft</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <input type="text" name="value" placeholder="Value/Worth of The Phone" required>
+
+                        
+                        <textarea name="address" id="address" cols="50" rows="3" placeholder="Address" required></textarea>
+                        <button type="submit" id="submitButton">Send <span class="glyphicon glyphicon-arrow-right"></span></button>
+                        <p style="text-align: center; font-size: .8em; color: rgb(100, 98, 98); margin-top: 2rem;">Copyright @Mobcare</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="successOverlay">
+        <p>You have successfully been registered</p>
+    </div>
+    <!-- ... (previous code) ... -->
+
+<script>
+
+        var dob = document.querySelector('.dob')
+        dob.style.width = '45%'
+        dob.style.float = "left"
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.getElementById('form');
+            var submitButton = document.getElementById('submitButton');
+            
+            form.addEventListener("submit", function(event) {
+                // Adjust the opacity and appearance of the submit button
+                submitButton.style.opacity = 0.5;
+                submitButton.style.width = 'auto';
+                submitButton.innerHTML = 'Sending...';
+            })    
+        })
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    padding-top: 50px;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+#sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    background-color: #555;
+}
+
+
+#loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loader-overlay img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fade-slide-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-slide-section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    padding: 8px 5px;
+    z-index: 3;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 12px 0px, rgba(0, 0, 0, 0.06) 0PX 1px 2px 0px;
+}
+
+.logo{
+    width: 9rem;
+    height: 5rem;
+}
+
+.btn{
+    float: right;
+    margin-top: .5rem;
+    padding: 0px;
+    background: transparent;
+}
+
+.sub{
+    float: right;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    background: transparent;
+    padding: 7px 12px;
+    border-radius: 20px;
+    border: 2px solid #00a24a;
+    color: #00a24a;
+    font-weight: bold;
+}
+
+.bar{
+    background: black;
+    width: 3rem;
+    height: 3px;
+    margin: 6px;
+    border-radius: 20px;
+}
+
+.bar2{
+    display: block;
+    margin:6px auto;
+    margin-right: 6px;
+    width: 2rem;
+}
+
+/* Hero Style */
+
+.hero-area{
+    height: 35rem;
+    margin-top: 1px;
+}
+
+.hero-text-sub {
+    position: absolute;
+    top: 0;
+    width: 36rem;
+    height: 35rem;
+    z-index: 2;
+    overflow-x: visible;
+    background: rgba(255, 255, 255, 0.76);
+}
+
+.hero-text-sub h2{
+    color: #046599;
+    font-weight: bolder;
+    font-size: 1.7em;
+    font-family: 'Lemon', serif;
+}
+
+.hero-text-sub p{
+    width: 85%;
+    font-size: 1.1em; color: black;
+    margin-top: 1rem;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    padding: 4px;
+    padding-top: 10px;
+    line-height: 2.7rem;
+}
+
+.hero-text-sub button{
+    border: none;
+    background-color: #046599;
+    padding:8px 12px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 2rem;
+    margin-left: .5rem;
+    width: 30rem;
+    height: 5rem;
+    transition: all 1s;
+}
+
+.hero-image{
+    background-image: url(https://res.cloudinary.com/dbfue99qr/image/upload/v1705145839/Mobcare/sam_pja9b5.png);
+    background-position: center;
+    background-size: cover;
+    height: 35rem;
+}
+
+/* About */
+.about{
+    margin-top: 5rem;
+}
+
+.about-sideA{
+    height: 37rem;
+    padding: 8px;
+}
+
+.about-sideA img{
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+    padding-bottom: 2rem;
+}
+
+.about h2{
+    color: #006eaa;
+    font-weight: bold;
+    font-family: 'Lemon', serif;
+}
+
+.stap{
+    background: #00a24a;
+    height: 3.5px;
+    width: 5rem;
+    border-radius: 5px;
+    margin-top: -.6rem;
+}
+
+
+.about-sideB{
+    height: auto;
+    font-size: 1.2em;
+    padding-bottom: 2rem;
+}
+
+.about-sideB h4{
+    color: #006eaa;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-top: 2rem;
+    font-family: 'Lemon', serif;
+}
+
+.values{
+    padding: 8px;
+}
+
+.values-sideA{
+    height: 36rem;
+    padding-top: 2rem;
+    background: #006eaa;
+}
+
+
+.values-sideB{
+    height: auto;
+    background: #006eaa;
+    color: white;
+    padding:3rem 8px;
+    font-size: 1.2em;
+}
+
+.values .stap{
+    margin-bottom: 0rem;
+}
+
+.values-sideA h4{
+    color: rgb(255, 255, 174);
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Lemon', serif;
+}
+
+.values-sideB h5{
+    font-weight: bold;
+    color: rgb(255, 255, 174);
+    font-size: 1em;
+    font-family: 'Nunito', serif;
+}
+
+
+.values-sideA img{
+    padding:20px 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Apart styling */
+
+#apart .values-sideA{
+    background-color: white;
+}
+
+#apart .values-sideA h4{
+    color: #006eaa;
+}
+
+#apart .values-sideB{
+    background-color: white;
+    color: black;
+}
+
+#apart .values-sideB h5{
+    color: #006eaa;
+}
+
+
+
+/* Footer styling */
+
+footer{
+    margin-top: 5rem;
+    height: auto;
+    background: #006eaa;
+    padding: 5rem 3rem;
+}
+
+.footer-sideA img{
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    margin: auto;
+    background: white;
+    border-radius: 100%;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+
+.footer-sideB{
+    text-align: center;
+    color: white;
+}
+
+.footer-sideB h3{
+    color: white;
+    font-weight: bold;
+}
+
+.footer-sideB p{
+    font-size: 1.1em;
+    padding: 0 2rem;
+    line-height: 3rem;
+}
+
+footer h4{
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+}
+
+
+
+
+@media screen and (min-width: 700px){
+    .logo{
+        padding-left: 3.5rem;
+        width: auto;
+    }
+
+    .hero-image{
+        height: 40rem;
+    }
+
+    .hero-text-sub {
+        width: auto;
+        padding-left: 5rem;
+        padding-top: 3.5rem;
+    }
+
+    .hero-text-sub button{
+        width: 40rem;
+        height: 5rem;
+    }
+
+
+    .hero-text-sub p{
+        width: 60%;
+    }
+
+    .about{
+        width: 90%;
+    }
+
+    .about-sideB{
+        height: 35rem;
+        padding: 4px 2px 10px;
+    }
+
+    .about-sideB{
+        margin-top: 11rem;
+        height: 45rem;
+        font-size: 1.2em;
+    }
+
+    .about-sideA{
+        height: 45rem;
+    }
+
+    .about-sideB h4{
+        padding-top: 0rem;
+    }
+
+
+    .values{
+        width: 88%;
+    }
+
+
+    .values-sideA{
+        height: 47rem;
+        padding-top: 1rem;
+    }
+    .values-sideA{
+        margin-top: -7.5rem;
+    }
+
+    .values-sideB{
+        margin-top: -7.5rem;
+    }
+
+    .values-sideB p:nth-child(1){
+        margin-top: 4rem;
+    }
+
+    .values-sideB{
+        height: 47rem;
+    }
+
+    .values-sideA img{
+        height: 78%;
+    }
+
+    .footer-sideB{
+        text-align: left;
+    }
+}

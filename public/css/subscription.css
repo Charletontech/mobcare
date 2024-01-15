@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+header{
+    height: 5.8rem;
+    padding: 8px 5px;
+    z-index: 3;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 14px 0px, rgba(0, 0, 0, 0.2) 0PX 1px 2px 0px;
+}
+
+.logo{
+    width: 9rem;
+    height: 5rem;
+}
+
+.plans{
+    color: #046599;
+    margin-top: 1.4rem;
+    padding: 1rem;
+    display: block;
+    margin: auto;
+}
+
+.plans h2{
+    font-weight: bold;
+}
+
+
+thead{
+    background: #046599;
+    color: white;
+}
+
+tbody{
+    color: black;
+}
+
+.imgCont {
+    height: 20rem;
+}
+
+.imgCont img{
+    width: 45%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.btn{
+    margin: 1.5rem auto;
+    background: #046599;
+    display: block;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    float: right;
+    
+}
+
+
+@media screen and (min-width: 720px){
+    .plans{
+        width: 60%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 14px 0px, rgba(0, 0, 0, 0.2) 0PX 1px 2px 0px;
+        border-radius: 15px;
+        margin-top: 2rem;
+    }
+
+    .btn{
+    }
+
+    header{
+        box-shadow: none;
+    }
+}
