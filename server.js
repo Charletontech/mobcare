@@ -28,10 +28,9 @@ app.get('/subscription', (req, res) => {
   res.sendFile(filePath);
 });
 
-
 app.post('/form-submission', (req, res) => {
   //PROCESSING DATA FROM FORM
-  var {firstName, middleName, lastName, email, dob, gender, phone, model, imei, brand, color, value, plan, address} = req.body
+  var {firstName, middleName, lastName, email, dob, gender, phone, model, imei, referrer, brand, color, value, plan, address} = req.body
   
   //LOGIC TO CONVERT DATE TO REQUIRED FORMAT
   function convertDate(inputDate) {
@@ -57,6 +56,7 @@ app.post('/form-submission', (req, res) => {
     phone: phone,
     model: model,
     imei: imei,
+    referrer: referrer,
     brand: brand,
     color: color,
     value: value,
@@ -243,6 +243,7 @@ app.post('/form-submission', (req, res) => {
                     <p>Phone Color:${formData.color}</p>
                     <p>Insurance Plan: ${formData.plan}</p>
                     <p>Customer Address: ${formData.address}</p>
+                    <p>Name Of Referrer: ${formData.referrer}</p>
                     </p>
                   </div>
                   <div class="footer">
@@ -290,12 +291,6 @@ app.post('/form-submission', (req, res) => {
 })
 
 
-
-
 app.listen(3000, () => {
   console.log('Listening at port 3000...');
 });
-
-
-
-
