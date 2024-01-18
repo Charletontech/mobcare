@@ -74,7 +74,7 @@ app.post('/form-submission', (req, res) => {
   })
   
   var logonRequestOptions = {
-    hostname: '196.46.20.76',
+    hostname: '196.46.20.83',
     port: 3021,
     path: '/clients/v1/auth/_login',
     method: 'POST',
@@ -92,7 +92,7 @@ app.post('/form-submission', (req, res) => {
   
     response.on('end', () => {
       var parsedRecievedLogonData = JSON.parse(recievedLogonData);
-
+      console.log(parsedRecievedLogonData)
        //LOGIC TO CREATE BANK WALLET        
         const walletCreationRequestData = JSON.stringify({
           phoneNumber: formData.phone,
@@ -109,7 +109,7 @@ app.post('/form-submission', (req, res) => {
         
       // Setting up the options for the HTTP request
         const requestOptions = {
-          hostname: '196.46.20.76',
+          hostname: '196.46.20.83',
           port: 3021,
           path: '/clients/v1/accounts',
           method: 'POST',
@@ -129,8 +129,9 @@ app.post('/form-submission', (req, res) => {
         
           response2.on('end', () => {
             var newAccoutDetails = JSON.parse(data2);
+            console.log(newAccoutDetails);
             
-            //sending the notification to the user
+          //sending the notification to the user
             const accountNumber = newAccoutDetails.account
             var fullName = `${formData.firstName} ${formData.middleName} ${formData.lastName}`
             res.render('notify', {accountNumber, fullName})
@@ -266,7 +267,7 @@ app.post('/form-submission', (req, res) => {
             })
         
           });
-        });
+       });
         
         httpRequestSender.on('error', (error) => {
           console.error('Error in HTTP request:', error.message);
@@ -277,7 +278,7 @@ app.post('/form-submission', (req, res) => {
         httpRequestSender.write(walletCreationRequestData);
         httpRequestSender.end();
             
-        })
+      })
 
   })
   logonHttpSender.on('error', (error) => {
@@ -289,7 +290,6 @@ app.post('/form-submission', (req, res) => {
   logonHttpSender.write(logonRequestData);
   logonHttpSender.end();
 })
-
 
 app.listen(3000, () => {
   console.log('Listening at port 3000...');
