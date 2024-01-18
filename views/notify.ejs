@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Nunito:wght@300&display=swap" rel="stylesheet">
   <title>Account created - Mobcare</title>
   <style>
+    *{
+      font-family: Nunito;
+    }
     body {
       margin: 0;
       display: flex;
@@ -15,16 +21,16 @@
     }
 
     .center-box {
-      width: 25rem;
+      width: 18rem;
       height: auto;
       padding: 1rem;
       background-color: white;
-      border: 1px solid #333;
-      border-radius: 8px;
+      border-radius: 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 12px 0px, rgba(0, 0, 0, 0.06) 0PX 1px 2px 0px;
     }
 
     img{
@@ -36,12 +42,14 @@
     .message {
       font-size: 18px;
       color: #333;
-      margin-top: -3rem;
+      margin-top: -2.8rem;
       text-align: center;
     }
 
     ul{
-        margin-top: -.5rem;
+        margin-top: -1rem;
+        margin-left: -2.5rem;
+        width: 100%;
     }
 
     ul li{
@@ -55,6 +63,13 @@
         margin-top: 1.5rem;
         text-align: center;
     }
+
+    @media screen and (min-width: 720px){
+      .center-box {
+      width: 25rem;
+      height: 34rem;
+      }
+    }
     
   </style>
 </head>
@@ -62,14 +77,16 @@
 
   <div class="center-box">
       <img src="https://res.cloudinary.com/dbfue99qr/image/upload/v1694772669/phoenix/phoenix-uploads/tick_ie8hgn.png" alt="" srcset="">
-    <h1 style="color: #00a24a;">Account Created!</h1>
+    <h1 style="color: #00a24a;  font-family: 'Nunito', serif; font-weight: bold;">Account Created!</h1>
     <p class="message">
-        <h3>Details:</h3>
+        <h3 style="color: #046599;">Details:</h3>
         <ul>
-            <li>Account Number - <b><%= accountNumber %></b></li>
-            <li>Name - <b><%= fullName %></b></li>
+          <li >Account Number: </li>
+          <li style="color: #046599;"><b>1298130990</b></li>
+          <li  >Name: </li>
+          <li style="color: #046599;"><b>John Doe </b></li>
         </ul>
-        <i style="color: rgb(145, 18, 18);">Note: You will transfer to this account to fund your wallet. Please note the Account number above as it will not be displayed again unless you contact an Admin.</i>
+        <i style="color: rgb(83, 75, 75);">Note: You will transfer to this account to fund your wallet. Please note the Account number above as it will not be displayed again unless you contact an Admin.</i>
     </p>
   </div>
 
