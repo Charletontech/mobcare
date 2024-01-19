@@ -30,7 +30,7 @@ app.get('/subscription', (req, res) => {
 
 app.post('/form-submission', (req, res) => {
   //PROCESSING DATA FROM FORM
-  var {firstName, middleName, lastName, email, dob, gender, phone, model, imei, referrer, brand, color, value, plan, address} = req.body
+  var {firstName, middleName, lastName, email, dob, gender, phone, model, referrer, brand, color, value, plan, address} = req.body
   
   //LOGIC TO CONVERT DATE TO REQUIRED FORMAT
   function convertDate(inputDate) {
@@ -55,7 +55,6 @@ app.post('/form-submission', (req, res) => {
     gender: gender,
     phone: phone,
     model: model,
-    imei: imei,
     referrer: referrer,
     brand: brand,
     color: color,
@@ -239,7 +238,6 @@ app.post('/form-submission', (req, res) => {
                     <p>Account Number: ${accountNumber}</p>
                     <p>Phone Number: ${formData.phone}</p>
                     <p>Phone Model: ${formData.model}</p>
-                    <p>IMEI: ${formData.imei}</p>
                     <p>Phone Brand: ${formData.brand}</p>
                     <p>Phone Color:${formData.color}</p>
                     <p>Insurance Plan: ${formData.plan}</p>
