@@ -235,7 +235,7 @@ app.post('/form-submission', (req, res) => {
                     <p>
                     <h3>Details:</h3>
                     <p>Full Name: ${formData.firstName} ${formData.middleName} ${formData.lastName}</p>
-                    <pDate Of Birth: ${dob}</p>
+                    <p>Date Of Birth: ${dob}</p>
                     <p>Account Number: ${accountNumber}</p>
                     <p>Phone Number: ${formData.phone}</p>
                     <p>Phone Model: ${formData.model}</p>
